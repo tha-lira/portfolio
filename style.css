@@ -1,14 +1,14 @@
+/*font-family: "Dosis", sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Dosis:wght@200..800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
+/*font-family: "Playwrite AU SA", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Style+Script&display=swap');
 /* ===== Reset ===== */
 * {
  padding: 0;
  margin: 0;
  box-sizing: border-box;
  font-family: "Dosis", sans-serif;
- font-size: 1rem;
+  font-size: 1rem;
 }
 
 html{
@@ -30,7 +30,7 @@ li {
 /* ===== Variables ===== */
 :root {
  --color-background-dark: #212121;
- --color-background-light: #E0E0E0;
+ --color-background-light: #c9c2c2;
  --color-surface: #F8FAFC;
  --color-accent: #4c47b2;
  --color-accent-light: #7e75dc;
@@ -38,21 +38,16 @@ li {
  --color-text-dark: #1C1C1E;
  --color-text-light: #FFFFFF;
   --dark-color:#343434;
-
 }
 
 /* ===== Layout principal ===== */
 .main-container {
- max-width: 100vw;
- margin: 4rem auto 2rem;
- background-color: var(--color-background-light);
+  max-width: 100vw;
 }
 
 /* ===== Header ===== */
 .header {
  background-color: var(--color-background-dark);
- color: var(--color-text-light);
- position: fixed;
  top: 0;
  left: 0;
  width: 100%;
@@ -65,23 +60,23 @@ li {
 }
 
 .header__text {
-  color: var(--color-accent);
+  color: var(--color-accent-light);
   font-size: 2rem;
   font-weight: bold;
 }
 
 /* ===== Menu (Mobile por padrão) ===== */
 .navbar {
- display: none;
- position: absolute;
- top: 3rem;
- left: 10rem;
- background-color: var(--color-background-light);
- padding: 1rem;
- border: 1px solid rgba(0, 0, 0, 0.1);
- flex-direction: column;
- gap: 10px;
- width: 10rem;
+  display: none;
+  position: absolute;
+  top: 3rem;
+  left: 10rem;
+  background-color: var(--color-background-light);
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  gap: 10px;
+  width: 45rem;
 }
 
 .navbar.active {
@@ -97,10 +92,11 @@ li {
 .navbar__link {
  color: var(--color-text-dark);
  font-weight: 500;
+ font-size: 1.2rem;
 }
 
 .navbar__link:hover{
- color: var(--color-accent);
+ color: var(--color-accent-light);
 }
 
 /* Ícone do menu responsivo */
@@ -112,16 +108,88 @@ li {
  cursor: pointer;
 }
 
+/* ==== home section ==== */
+.home-section{
+  border: 5px solid red;
+}
 
+.home-section__header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.home-section__text{
+  padding: 4rem 1rem 2rem 1rem;
+  line-height: 2rem;
+}
+
+.home-section__txt{
+font-size: 1.5rem;
+}
+
+.home-section__title{
+  font-size: 2.3rem;
+}
+
+.home-section__subtitle{
+  font-size: 1.2rem;
+}
+
+.home-section__button{
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-accent-light);
+
+}
+
+.home-section__button:hover{
+  background-color: var(--color-accent-dark);
+  color: var(--color-surface);
+}
+
+.home-section__image{
+  background: url(img/undraw_woman.png) no-repeat center center/contain;
+  width: 20rem;
+  height: 20rem;
+}
+
+.technology-grid{
+  background-color: var(--color-background-dark);
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.technology-grid__list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.fab{
+  color: var(--color-surface);
+  font-size: 1.5rem;
+}
+/* ==== About section ==== */
+.about-section{
+  width: 100vw;
+  height: 100vh;
+  background-color: #302c81;
+}
 
 /* ==== portfolio section ==== */
+.portfolio-section{
+  background-color: aqua;
+}
 
 .portfolio__grid{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
-  padding: 1rem; 
+  padding: 1rem;   
 }
 
 .portfolio__header{
@@ -129,6 +197,7 @@ li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
 
 .portfolio__title{
@@ -144,29 +213,48 @@ hr{
 }
 
 .portfolio__subtitle{
-  font-family: "Satisfy", cursive;
   color: var(--color-text-dark);
   font-size: 2rem;
-
 }
 
 .project-card{
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  gap: 1rem;
   padding: 1rem;
   min-height: 15rem;
   min-width: 10rem;
-  box-shadow: 1px 1px 2px var(--dark-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background: url(img/pexels-photo-1109541.webp) center center/ cover;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  
+}
+.project-card__header{
+  opacity: 0.5;
+  min-width: 100%;
+  min-height: 50%;
+  border-radius: 4px;
+  opacity: 100;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card__bottom{
+  display: flex;
+  align-items: end;
+  justify-content: end;
 }
 
 .project-card__link{
-  padding: 0.5rem;
+  padding: 0.5rem 0.6rem;
   border: 1px solid #343434;
-  background-color: var(--color-background-light);
+  background-color: var(--color-surface);
   transition: transform 0.3s ease;
+  border-radius: 100rem;
 }
 
 .project-card__link:hover{
@@ -181,6 +269,7 @@ hr{
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 0 2rem;
+  background-color: blueviolet;
 }
 
 .section-bottom__list{
@@ -189,22 +278,23 @@ hr{
 }
 
 .section-bottom__image{
-  width: 2rem;
+  width: 2.3rem;
   transition: transform 0.3s ease;
 }
 
 .section-bottom__image:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .section-bottom__btn{
   color: var(--color-accent);
   background-color: var(--color-text-light);
   padding: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.247);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 /* ===== Footer ===== */
@@ -239,6 +329,30 @@ hr{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .technology-grid{
+    width: 90%;
+    margin: 4rem auto;
+
+  }
+
+  .technology-grid__list{
+    gap: 3rem;
+  }
+  
+  .fab{
+  font-size: 3rem;
+  }
+
+  .home-section__header{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+   
+  .home-section__image{
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
   
@@ -258,6 +372,7 @@ hr{
     padding: 0;
     border: none;
     width: auto;
+    box-shadow: none;
  }
 
  .navbar__list{
