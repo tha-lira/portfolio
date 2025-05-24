@@ -1,5 +1,5 @@
 const menuIcon = document.getElementById("menu");
-const navbar = document.querySelector(".navbar");
+const navbar = document.getElementsByClassName("navbar");
 const form = document.getElementById('contact-form');
 const messageBox = document.getElementById('form-message');
 
