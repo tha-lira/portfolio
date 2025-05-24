@@ -158,7 +158,7 @@ li {
 /* ==== home section ==== */
 
 .home-section{
-  padding: 1rem 0;
+  min-height: 100vh;
 }
 
 .home-section__header{
@@ -178,8 +178,11 @@ font-size: 1.8rem;
 
 .home-section__title{
   font-size: 2.5rem;
-  color: var(--color-accent);
+  color: var(--accent-light);
   margin: 1rem 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;  
+  letter-spacing: 3px;
 }
 
 .home-section__subtitle{
@@ -225,8 +228,8 @@ font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.9rem;
+  padding: 1rem 0.6rem;
 }
 
 .fab{
@@ -245,6 +248,13 @@ font-size: 1.8rem;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.about-section__image{
+  background: url(img/IMG.jpg) no-repeat center center/cover;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 8px;
 }
 
 .about-section__txt{
@@ -273,12 +283,10 @@ font-size: 1.8rem;
 }
 
 .about-section__list{
-  display: flex;
-  gap: 3rem;
-  padding: 1rem 0;
+  margin: 1rem 0 0 0 ;
 }
 
-.about-section__list > ul > li::before{
+.about-section__list > p::before{
   content: "";
   display: inline-block;
   width: 20px;
@@ -294,7 +302,7 @@ font-size: 1.8rem;
 /* ==== portfolio section ==== */
 
 .portfolio-section{
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 .portfolio__footer{
@@ -309,11 +317,6 @@ font-size: 1.8rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.portfolio__title{
-  font-size: 2rem;
-  letter-spacing: 1px;
 }
 
 .portfolio__subtitle{
@@ -414,7 +417,7 @@ font-size: 1.8rem;
 
 .section-bottom{
   gap: 1rem;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   background-color: var(--dark);
 }
 
@@ -436,17 +439,6 @@ font-size: 1.8rem;
 }
 
 /*---- botões ----*/
-.section-bottom__btn{
-  color: var(--accent-dark);
-  background-color: var(--surface);
-  padding: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.section-bottom__btn:hover{
-  background-color: var(--accent-light);
-  color: var(--light);
-}
 
 .contact-form__button {
   padding: 0.8rem 2rem;
@@ -476,14 +468,6 @@ font-size: 1.8rem;
 /*    RESPONSIVIDADE       */
 /* ----------------------- */
 
-@media (max-width: 480px) {
-  .home-section__button {
-    display: block;
-    margin: 1rem auto;
-    width: 80%;
-  }
-}
-
 @media (min-width: 768px) {
   .home-section__header{
     flex-direction: row;
@@ -503,11 +487,17 @@ font-size: 1.8rem;
     font-size: 3rem;
   }
 
+  .about-section__image{
+    width: 25rem;
+    height: 20rem;
+  }
+
   /* ---- Form ---- */
   .contact-form input,
   .contact-form textarea {
     min-width: 50%;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -538,16 +528,12 @@ font-size: 1.8rem;
   }
 
   .home-section{
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   .home-section__image{
     width: 28rem;
     height: 28rem;
-  }
-
-  .portfolio__title{
-    font-size: 2.5rem;
   }
 
   .portfolio__subtitle{
@@ -567,12 +553,6 @@ font-size: 1.8rem;
     width: 50%;
   }
 
-  .about-section__list{
-    display: flex;
-    gap: 10rem;
-    padding: 1rem;
-  }
-
   .about-section__image{
     background: url(img/IMG.jpg) no-repeat center center/cover;
     width: 30rem;
@@ -580,9 +560,4 @@ font-size: 1.8rem;
     border-radius: 8px;
   }
 
-  .section-bottom__btn{
-    position: absolute;
-    left: 80rem;
-    top: 177rem;
-  }
 }
