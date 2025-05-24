@@ -7,7 +7,7 @@
   <!-- Link -- CSS -->
   <link rel="stylesheet" href="style.css">
   <!-- Link -- Favicon -->
-  <link rel="shortcut icon" href="icons/flower.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="icons/Flower.ico" type="image/x-icon">
   <!-- Link -- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_up" />
   <!-- Link -- Material Symbols -->
@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
- <!--Header-->
   <!-- Header -->
   <header class="header">
     <a href="#main" class="header__text">Thais Lira</a>
@@ -25,10 +24,10 @@
     </button>
     <nav class="navbar">
       <ul class="navbar__list">
-        <li><a href="#home" class="navbar__link">Home</a></li>
-        <li><a href="#about" class="navbar__link">Sobre</a></li>
-        <li><a href="#projects" class="navbar__link">Projetos</a></li>
-        <li><a href="#contact" class="navbar__link">Contato</a></li>
+        <li class="navbar__item"><a href="#home" class="navbar__link">Home</a></li>
+        <li class="navbar__item"><a href="#about" class="navbar__link">Sobre</a></li>
+        <li class="navbar__item"><a href="#projects" class="navbar__link">Projetos</a></li>
+        <li class="navbar__item"><a href="#contact" class="navbar__link">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -43,8 +42,8 @@
           <p class="home-section__subtitle">Estudante de desenvolvimento web.</p>
           <p class="home-section__subtitle">Bem-vindo(a) ao meu portfólio!</p>       
           <div class="home-section__box-btn">
-            <a href="https://linkedin.com/in/thais-lira-" class="home-section__button text-center">Linkedin</a>
-            <a href="https://github.com/tha-lira" class="home-section__button text-center">GitHub</a>
+            <a href="https://linkedin.com/in/thais-lira-" target="_blank" class="home-section__button text-center">Linkedin</a>
+            <a href="https://github.com/tha-lira" target="_blank" class="home-section__button text-center">GitHub</a>
           </div>
         </div>
         <div class="home-section__image"><!--image--></div>
@@ -66,11 +65,49 @@
 
     <!-- Sobre -->
     <section class="about-section" id="about">     
-      <div class="about-section__image">
-        <!--Image in css-->
-      </div>
-      <div class="">
 
+      <div class="about-section__box">
+        <div class="about-section__image"></div>
+        <div class="about-section__txt">
+          <h4 class="about-section__title">Sobre mim</h4>
+          <p class="about-section__text">
+            Meu nome é <strong>Thais Lira</strong>, tenho 31 anos e moro no extremo leste de São Paulo. Sou pedagoga com especialização em educação infantil e letramento, e atualmente curso o último semestre de <strong>Análise e Desenvolvimento de Sistemas</strong> pela UNINOVE, com conclusão prevista para o final de 2025.
+          </p>
+        
+          <p class="about-section__text">
+            Participei do programa <strong>Elas na Tech</strong>, uma iniciativa da JA Brasil em parceria com a IBM, onde mergulhei no desenvolvimento web com foco em <strong>HTML, CSS</strong> e <strong>JavaScript</strong>. Desenvolvi projetos práticos que ampliaram meu interesse pela área de tecnologia.
+          </p>
+        
+          <p class="about-section__text">
+            Atualmente, faço parte da <strong>Jornada de Dados</strong> da <strong>Laboratória</strong>, um programa voltado para formação em dados. Estou utilizando ferramentas como <strong>BigQuery, Power BI, Google Sheets</strong> e <strong>Looker Studio</strong> para desenvolver habilidades em:
+            Preparar e processar bases de dados, Realizar análises exploratórias, Criar dashboards e relatórios, Aplicar técnicas de segmentação e validação de hipóteses e Apresentar resultados de forma clara e estratégica.
+          </p>
+
+          <p class="about-section__text">
+            Estou constantemente desenvolvendo projetos pessoais, utilizando ferramentas como <strong>Visual Studio Code</strong>, <strong>Git</strong> e <strong>GitHub</strong>. Você pode conferir alguns deles <a href="#projects">aqui</a> ou visitar meu perfil no <a href="https://github.com/tha-lira" target="_blank">GitHub</a>.
+          </p>
+        
+          <h5 class="about-section__subtitle">Tecnologias que utilizo:</h5>
+          <div class="about-section__list">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Node.Js</li>
+              <li>Bootstrap</li>
+              <li>Sass</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+            <ul>
+              <li>BigQuery</li>
+              <li>Power BI</li>
+              <li>SQL</li>
+              <li>Google Sheets</li>
+              <li>Looker Studio</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -84,26 +121,23 @@
       <div class="portfolio__footer">
         <article class="project-card card__image-01">
           <div class="project-card__header">
-            <h4>Nome Projeto </h4>
+            <h4>Alessio's Pizzaria</h4>
             <p> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Rerum, recusandae voluptatum. Labore nihil ad eius repudiandae ullam,
-              debitis sit atque fuga maiores voluptas,
-              esse deleniti aperiam magni distinctio a quos.
+              Desenvolvido como parte de um desafio da plataforma OneBitCode, este projeto visa praticar HTML, CSS e JavaScript. A página simula o site de uma pizzaria fictícia, com layout responsivo e interações dinâmicas, proporcionando uma experiência de usuário aprimorada.
             </p>
           </div>
           <div class="project-card__bottom">
-            <a href="" class="project-card__link">
+            <a href="https://unique-eclair-0a506b.netlify.app/" target="_blank" class="project-card__link">
               <img src="icons/link.svg" alt="">
             </a>
-            <a href="" class="project-card__link">
+            <a href="https://github.com/tha-lira/onebitcode/tree/master/01__fundamentos-fullstack/02_exercicio-final.css" target="_blank" class="project-card__link" >
               <img src="icons/code.svg" alt="">
             </a>
           </div>
         </article>
 
         <article class="project-card card__image-02">
-          <div class="project-card__header">
+<!--       <div class="project-card__header">
             <h4>Nome Projeto </h4>
             <p> 
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -119,11 +153,11 @@
             <a href="" class="project-card__link">
               <img src="icons/code.svg" alt="">
             </a>
-          </div>
+          </div> --> 
         </article>
 
         <article class="project-card card__image-03">
-          <div class="project-card__header">
+<!--       <div class="project-card__header">
             <h4>Nome Projeto </h4>
             <p> 
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -139,11 +173,11 @@
             <a href="" class="project-card__link">
               <img src="icons/code.svg" alt="">
             </a>
-          </div>
+          </div> --> 
         </article>
 
         <article class="project-card card__image-04">
-          <div class="project-card__header">
+<!--       <div class="project-card__header">
             <h4>Nome Projeto </h4>
             <p> 
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -159,11 +193,11 @@
             <a href="" class="project-card__link">
               <img src="icons/code.svg" alt="">
             </a>
-          </div>
+          </div> --> 
         </article>
 
         <article class="project-card card__image-05">
-          <div class="project-card__header">
+<!--       <div class="project-card__header">
             <h4>Nome Projeto </h4>
             <p> 
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -179,11 +213,11 @@
             <a href="" class="project-card__link">
               <img src="icons/code.svg" alt="">
             </a>
-          </div>
+          </div> --> 
         </article>
 
         <article class="project-card card__image-06">
-          <div class="project-card__header">
+<!--       <div class="project-card__header">
             <h4>Nome Projeto </h4>
             <p> 
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -199,18 +233,16 @@
             <a href="" class="project-card__link">
               <img src="icons/code.svg" alt="">
             </a>
-          </div>
+          </div> --> 
         </article>
       </div>
-    </section>
-
-    <!-- Contato -->
-    <section class="contact-section" id="contact">
     </section>
   </main>
 
   <!-- Rodapé com redes sociais e navegação -->
-  <section class="section-bottom">
+  <section class="section-bottom" id="contact">
+    <h2>Entre em Contato</h2>
+    <p>Quer conversar sobre um projeto, oportunidade ou apenas dizer oi? Fique à vontade!</p>
     <ul class="section-bottom__list">
       <li><a href="https://github.com/tha-lira" target="_blank" title="GitHub"><img src="icons/github-circle.svg" class="section-bottom__image" alt="GitHub" /></a></li>
       <li><a href="https://www.instagram.com/t.lira_/" target="_blank" title="Instagram"><img src="icons/instagram.svg" class="section-bottom__image" alt="Instagram" /></a></li>
@@ -219,11 +251,20 @@
     </ul>
 
     <ul class="section-bottom__list">
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#home">Skills</a></li>
-      <li><a href="#contact">Contatos</a></li>
+      <li class="section-bottom__item"><a href="#about">Sobre</a></li>
+      <li class="section-bottom__item"><a href="#projects">Projetos</a></li>
+      <li class="section-bottom__item"><a href="#home">Skills</a></li>
+      <li class="section-bottom__item"><a href="#contact">Contatos</a></li>
     </ul>
+
+    <p><strong>Email:</strong> <a href="mailto:thais.lira.apolinario@gmail.com">thais.lira.apolinario@gmail.com</a></p>
+
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="from_name" placeholder="Seu nome" required />
+      <input type="email" name="reply_to" placeholder="Seu email" required />
+      <textarea name="message" placeholder="Digite sua mensagem..." required></textarea>
+      <button type="submit" class="contact-form__button">Enviar</button>
+    </form>
 
     <a href="#main" class="section-bottom__btn">
       <span class="material-symbols-outlined">keyboard_double_arrow_up</span>
